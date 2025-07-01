@@ -1,0 +1,313 @@
+/* ESTILOS LOGIN */
+.containerLogin{
+  --fondo: url("https://fuelcarmagazine.com/wp-content/uploads/2020/10/%C2%A9-Bugatti.jpg")
+}
+
+.containerLogin {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-image: var(--fondo);
+  background-size: cover;
+  background-position: center;
+}
+
+.containerSecion{
+  width: clamp(300px, 370px, 450px);
+  color: white;
+  backdrop-filter: grayscale(.5) blur(6px);
+  padding: 30px;
+  border: 1px solid grey;
+  box-shadow: 0 0 8px rgb(173, 172, 172);
+  border-radius: 40px;
+  font-style: italic;
+}
+
+.form-control{
+  background-color: transparent;
+  width: 100%;
+  height: 45px;
+  margin: 25px 0px;
+  padding: 10px;
+  font-style: italic;
+}
+
+.botonInicio{
+  width: 100px;
+  min-height: 50px;
+  border-radius: 10%;
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  top:1em;
+  left: 1em;
+  backdrop-filter: grayscale(.5) blur(6px);
+  border: 1px solid grey;
+  box-shadow: 0 0 8px rgb(173, 172, 172);
+  font-style: italic;
+}
+
+
+/* ESTILOS DEL LAYOUT */
+.contenedor{
+  --fondo: url("https://e1.pxfuel.com/desktop-wallpaper/923/447/desktop-wallpaper-bugatti-tail-light-tail-light.jpg");
+  width: 100%;
+  display: flex;
+}
+
+.sidebar{
+  width: 20%;
+  height: 100vh;
+  background-color: black;
+  padding: 2em;
+  border: 1px solid grey;
+  box-shadow: 0 0 8px rgb(173, 172, 172);
+}
+
+.contentModules{
+  width: 80%;
+  height: 100vh;
+  border: 1px solid grey;
+  box-shadow: 0 0 8px rgb(173, 172, 172);
+}
+
+
+.seccion1{
+  width: 100%;
+  background-color: rgb(47, 46, 46);
+  height: 5em;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: white;
+}
+
+
+.seccion1 .infoUser {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccion2{
+  width: 100%;
+  height: 100vh;
+  padding: 1em;
+  background-image: var(--fondo);
+  background-size: cover;
+  background-position: center;
+}
+
+.card{
+  color: white;
+}
+
+
+/* ESTILOS DEL SIDEBAR */
+
+.sidebar .logo img{
+  width: 80%;
+  margin: 15px;
+}
+
+.sidebar .menu ul li{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-size: 18px;
+  padding: 1em;
+}
+
+.sidebar .menu ul li:hover{
+  border-radius: 8px;
+  transition: background-color 0.2s ease, border-radius 0.2s;
+  background-color: #d0d0d0;
+}
+
+.sidebar .menu ul li .link{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+
+/* ESTILOS CARRUSEL LANDING */
+/* === FONDO GENERAL DARK === */
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav-item-login{
+  position: absolute;
+  right: 4em;
+}
+
+/* Asegurar que todas las imágenes del carrusel tengan el mismo tamaño */
+.carousel-inner img {
+  width: 100%;
+  height: 500px; /* Puedes ajustar esta altura según lo que necesites */
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+  border-radius: 15px;
+  border: 1px solid grey;
+  box-shadow: 0 0 8px rgb(173, 172, 172);
+}
+
+/* Carousel general */
+.carousel {
+  position: relative;
+  margin-bottom: 0.5rem ;
+}
+
+/* Controles (prev/next) */
+.carousel-control {
+  width: 15%;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+  color: white;
+}
+
+.carousel-control:hover {
+  opacity: 0.9;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(0) invert(1);
+}
+
+/* Iconos SVG personalizados en blanco */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/></svg>");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>");
+}
+
+/* Indicadores (puntos abajo del carrusel) */
+.carousel-indicators [data-bs-target] {
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+  background-color: #ffffff;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+/* Caption (texto encima de la imagen) */
+.carousel-caption {
+  width: 70%;
+  color: white;
+  padding: 1rem 2rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  background: rgba(0, 0, 0, 0.5); /* opcional: fondo oscuro transparente para mejor legibilidad */
+  border-radius: 10px;
+  font-style: italic;
+  margin: 0 auto;
+}
+
+/* Transición de los slides */
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+}
+
+/* CATALOGO LANDING */
+/* Espacio general */
+.m-4 {
+  margin: 2rem;
+}
+
+/* Títulos */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-style: italic;
+  color: #f8f9fa;
+  border-bottom: 2px solid #555;
+  padding-bottom: 0.5rem;
+
+}
+
+/* Tarjetas */
+.card {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.01);
+}
+
+/* Cabecera de la tarjeta */
+.card-header
+ {
+  background-color: #2c2c2c;
+  color: #f1f1f1;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.75rem;
+  font-style: italic;
+}
+
+/* Cuerpo y imagen */
+.card-body {
+  padding: 0;
+}
+
+.card-body img {
+  width: 100%;
+  height: 250px; /* altura fija para uniformidad */
+  object-fit: cover; /* recorta la imagen sin deformarla */
+  border-bottom: 1px solid #444;
+}
+
+/* Pie de la tarjeta */
+.card-footer {
+  background-color: #2c2c2c;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 0.75rem;
+  font-style: italic;
+}
+
+/* Responsive grid con Bootstrap */
+@media (max-width: 768px) {
+  .col-4 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+
